@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+  color: rgb(70, 70, 89);
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+.main-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 0;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+  z-index: 2;
+}
+
+.logo-nav {
+    width: 60px;
+    padding: 10px;
+    margin-right: -10px;
+}
+#logo {
+  color: rgb(70, 70, 89);
+  font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+}
+
+#logo:hover {
+  color: #baafe6;
+}
+
+strong {
+  color: #baafe6;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+}
+
+.navButtons {
+  color: rgb(83, 70, 89);
+  font-weight: 500;
+}
+
+.navButtons:hover {
+  color: #d840f3;
+}
+
+.buttonProjeto {
+  background: linear-gradient(45deg, #8f75ff, rgb(172, 25, 221));
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 8px;
+}
+.buttonProjeto:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.perfil {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(243, 232, 253, 0.482);
+}
+.perfil h2 {
+  max-width: 500px;
+  font-size: 28px;
+}
+#fotoperfil {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 100%;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #8f75ff, rgb(172, 25, 221)) border-box;
+  border: 5px solid transparent;
+}
+h3 {
+  color: #8f75ff;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+#tecnologias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem;
+  margin-top: 2rem;
+}
+.icones {
+  margin-top: 1rem;
+}
+.icons {
+  width: 50px;
+  margin: 1rem;
+}
+
+#sobre {
+  background-color: rgba(245, 232, 253, 0.482);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+.conteudoSobre {
+  display: flex;
+  align-items: center;
+}
+
+.SobreImg {
+  width: 400px;
+  height: 400px;
+  margin-right: 2rem;
+}
+
+#sobre p {
+  max-width: 700px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.button-icon {
+    width: 70px;
+    font-size: 1.25rem;
+    margin-right: 20px;
+    transition: .3s;
+    display: flex;
+    background-color: #8f75ff;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 200;
+}
+
+.portfolio-img{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+}
+
+.telas {
+    width: 600px;
+    margin: 1rem;
+}
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 232, 253, 0.482)
+}
+
+#contato p {
+  display: flex;
+  align-items: center;
+}
+
+.WrapperButtonsContato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonContato {
+  background-image: linear-gradient(135deg, #8f75ff 40%, hsl(268, 97%, 65%));
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 10px 16px;
+  margin: 1rem;
+}
+.buttonContato:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.buttonContato img {
+  width: 40px;
+  margin-right: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 1rem;
+  padding: 10px;
+}
