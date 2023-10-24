@@ -246,7 +246,7 @@ footer {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    margin: 16px;
+    margin: 0;
   }
   .main-header {
     flex-direction: column;
@@ -272,6 +272,7 @@ footer {
   }
   #tecnologias {
     margin: 1rem;
+
   }
   #projetos {
     margin: 1rem;
@@ -282,15 +283,8 @@ footer {
     align-items: center;
   }
   .SobreImg {
-    width: 300px;
-    height: 300px;
-    margin-right: 0;
     flex-direction: column;
-  }
-  #sobre p {
-    max-width: 300px;
-    line-height: 2;
-    text-align: justify;
+    margin: 1rem;
   }
 
   .conteudoSobre{
@@ -312,6 +306,7 @@ footer {
 
   #contatos{
     flex-direction: column;
+    text-align: center;
 
   }
   .WrapperButtonsContato {
