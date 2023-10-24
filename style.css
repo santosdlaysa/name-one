@@ -271,7 +271,9 @@ footer {
     margin: 1rem;
   }
   #tecnologias {
-    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
 
   }
   #projetos {
@@ -289,6 +291,18 @@ footer {
 
   .conteudoSobre{
     flex-direction: column;
+  }
+
+  .text{
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+  .text-p{
+    margin: -15px;
   }
   .container-text{
     flex-direction: column;
