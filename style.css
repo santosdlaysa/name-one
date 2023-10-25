@@ -138,13 +138,13 @@ h3 {
   display: flex;
   align-items: center;
   width: 80%
+  margin-rigth: 250px;
 }
 
 .SobreImg {
   width: 300px;
   height: 300px;
   margin-right: 2rem;
-    align-items: center;
 }
 
 #sobre p {
