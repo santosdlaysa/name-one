@@ -112,19 +112,18 @@ nav {
 
 body.dark-theme{
   /* HSL color mode */
-  --fundo: #d4c4da;
-  --text-color:#ffff;
-  --text-color2:#464659;
-  --fundo2: #ffffff61;
-  --shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
-  --shadowint: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-  rgba(0, 0, 0, 0.3)  0px 7px 13px -3px, rgba(0, 0, 0, 0.1)  0px -3px 0px inset;
-  --text: rgb(255, 255, 255);
-  --hover: #baafe6;
-  --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
-  --title: #8f75ff;
-  --body-style: #d4c4da;
-  --h3: #3c0450;
+  --fundo: #604370;
+    --text-color: #ffff;
+    --text-color2: #fff;
+    --fundo2: #211627;
+    --shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+    --shadowint: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+    --text: rgb(255, 255, 255);
+    --hover: #baafe6;
+    --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+    --title: #8f75ff;
+    --body-style: #211627e0;
+    --h3: #805caa;
   
 }
 
