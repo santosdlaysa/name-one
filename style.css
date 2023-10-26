@@ -333,7 +333,13 @@ footer {
 
   }
   #projetos {
-    margin: 1rem;
+    margin: 2rem;
+  }
+
+  .container-project{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
   }
 
   #sobre {
@@ -378,6 +384,7 @@ footer {
   #contatos{
     flex-direction: column;
     text-align: center;
+    margin-top: 85rem;
 
   }
   .WrapperButtonsContato {
