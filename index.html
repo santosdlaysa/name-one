@@ -10,10 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
-
   <body>
  <!-----Navbar----->
-    <header class="main-header">
+    <header class="main-header header">
       <img
         class="logo-nav"
         src="./assets/Neutral Elegant Luxe Jewelry Logo.png"
@@ -28,6 +27,11 @@
         <a href="#contatos" class="navButtons">Contatos</a>
         <a href="#projetos" class="buttonProjeto">Projetos</a>
       </nav>
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        </div>
+      </div>
 
     </header>
 <!-----Perfil----->
@@ -90,87 +94,88 @@
         </p>
       </div>
 </div>
+
+
 <!-----Projetos----->
-<div id="projetos">
+<section id="projetos">
   <div class="container-text">
     <h2 class="text-1">Meus projetos pessoais 🚀</h2>
     <p class="text">Alguns projetos que tenho feito ao longo dos estudos na área de front-end</p>
   </div>
-    
-    <!--Projeto 1-->
-        <a href="https://santosdlaysa.github.io/website/" target="_blank" > <h3>Site de recrutamento</h3></a>
-        <div class="portfolio-img">
-            <img src="./assets/visualpage.png" alt="website" class="telas">
-        </div>
-        
-              <p>Prática de front-end, desafio de 7 dias desenvolvendo uma página web com HTML5 e CSS3 a partir de um layout no Figma. conceitos básicos como 'div', 'section', inline para imagens, medidas responsivas em CSS, além de coisas mais avançadas como Flexbox, Grid e muitos outros - Desafiado por Giovanna Moeller - Alura</p>
-                <a href="https://santosdlaysa.github.io/website/" target="_blank" class="button-icon" target="_blank" >
-                  Veja
-              <i class="uil uil-arrow-right button_icon"></i>
-            </a>
-            <hr>
-            <!---Projeto 2-->
-        <a href="https://santosdlaysa.github.io/lay-coffe/" target="_blank" ><h3>Menu de cafeteria</h3></a>
-        <div class="portfolio-img">
-            <img src="./assets/coffe-tela.png" alt="coffe-tela" class="telas">
-        </div>
-        <p>Uma tela de cardapio de uma cafeteria com diversos tipos de café e bolos. Desenvolvido com VueJs</p>
-        <a href="https://santosdlaysa.github.io/lay-coffe/" target="_blank" class="button-icon" target="_blank">
-          Veja
-        <i class="uil uil-arrow-right button_icon"></i>
-      </a>
-      <hr>
-    <!--Projeot 3-->    
-    <a href="https://santosdlaysa.github.io/tela-de-login/" target="_blank" ><h3>Tela de login de estética</h3></a>
-        <div class="portfolio-img">
-            <img src="./assets/Imagem-login.png" alt="tela-de-login" class="telas">
-        </div>
-        
-              <p class="portfolio__description">Desenvolvido um web site de cadastro de profissionais de estéticas com tela de e cadastro em JavaScript</p>
-              <a href="https://santosdlaysa.github.io/tela-de-login/" target="_blank" class="button-icon">
-                Veja
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-</div>
+    <div class="container-project">
+ <!--Projeto 1-->
+ <div>
+  <a href="https://santosdlaysa.github.io/website/" target="_blank" > <h3>Site de recrutamento</h3></a>
+  <div class="portfolio-img">
+      <img src="./assets/visualpage.png" alt="website" class="telas">
+      
+  </div>
+  <p>Prática de front-end, desafio de 7 dias desenvolvendo uma página web com HTML5 e CSS3 a partir de um layout no Figma. conceitos básicos como 'div', 'section', inline para imagens, medidas responsivas em CSS, além de coisas mais avançadas como Flexbox, Grid e muitos outros - Desafiado por Giovanna Moeller - Alura</p>
+         
+     </a>
+ </div>
+     <!---Projeto 2-->
+     <div>
+      <a href="https://santosdlaysa.github.io/lay-coffe/" target="_blank" ><h3>Menu de cafeteria</h3></a>
+ <div class="portfolio-img">
+     <img src="./assets/coffe-tela.png" alt="coffe-tela" class="telas">
+ </div>
+ <p>Uma tela de cardapio de uma cafeteria com diversos tipos de café e bolos. Desenvolvido com VueJs</p>
+ 
+     </div>
+ <div>
+  <a href="https://santosdlaysa.github.io/tela-de-login/" target="_blank" ><h3>Tela de login de estética</h3></a>
+  <div class="portfolio-img">
+      <img src="./assets/Imagem-login.png" alt="tela-de-login" class="telas">
+  </div>
+  
+        <p class="portfolio__description">Desenvolvido um web site de cadastro de profissionais de estéticas com tela de e cadastro em JavaScript</p>
+        </a>
+     </div>
+ </div>
+<!--Projeot 3-->    
+</section>
+
 <!-----Contatos----->
-  </section>
-    <div id="contatos">
-      <h2>Contatos 💻​</h2>
-      <p>Me encontre e fale comigo nessas redes sociais:</p>
-      <div class="WrapperButtonsContato">
-        <a
-          href="https://www.linkedin.com/in/laysadiniz"
-          target="_blank"
-          class="buttonContato">
-          <img src="./assets/linkedin (1).png" alt="icon">Linkedin</a>
-        <a
-          href="https://github.com/santosdlaysa"
-          target="_blank"
-          class="buttonContato"
-        >
-          <img src="./assets/github.png" alt="icon"/>
-          GitHub
-        </a>
-        <a
-          href="https://www.instagram.com/santosdlaysa"
-          target="_blank"
-          class="buttonContato"
-        >
-          <img src="./assets/instagram.png" alt="icon"/>
-          Instagram
-        </a>
-        <a
-        href="./assets/Currículo - DEV.pdf"
-        target="_blank"
-        class="buttonContato"
-      >
-        <img src="./assets/icons8-pdf-50.png" alt="icon"/>
-        Curriculum
-      </a>
-      </div>
-    </div>
+
+<div id="contatos">
+  <h2>Contatos 💻​</h2>
+  <p>Me encontre e fale comigo nessas redes sociais:</p>
+  <div class="WrapperButtonsContato">
+    <a
+      href="https://www.linkedin.com/in/laysadiniz"
+      target="_blank"
+      class="buttonContato">
+      <img src="./assets/linkedin (1).png" alt="icon">Linkedin</a>
+    <a
+      href="https://github.com/santosdlaysa"
+      target="_blank"
+      class="buttonContato"
+    >
+      <img src="./assets/github.png" alt="icon"/>
+      GitHub
+    </a>
+    <a
+      href="https://www.instagram.com/santosdlaysa"
+      target="_blank"
+      class="buttonContato"
+    >
+      <img src="./assets/instagram.png" alt="icon"/>
+      Instagram
+    </a>
+    <a
+    href="./assets/Currículo - DEV.pdf"
+    target="_blank"
+    class="buttonContato"
+  >
+    <img src="./assets/icons8-pdf-50.png" alt="icon"/>
+    Curriculum
+  </a>
+  </div>
+</div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!-----Footer----->
     <footer>Desenvolvido por Laysa Diniz 2023</footer>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,10 +1,30 @@
+:root {
+  --hue-color: 280;
+
+
+  --fundo: white;
+  --text-color:#ffff;
+  --text-color2:#464659;
+  --fundo2: #f3e8fd7b;
+  --shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+  --shadowint: rgba(40, 1, 47, 0.4) 0px 2px 4px,
+  rgba(39, 0, 46, 0.3)  0px 7px 13px -3px, rgba(38, 0, 46, 0.1)  0px -3px 0px inset;
+  --text: rgb(70, 70, 89);
+  --hover: #baafe6;
+  --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+  --title: #8f75ff;
+  --body-style: #ffff;
+  --h3:#8f75ff;
+}
+
 body {
-    font-family: 'Roboto Mono', monospace;
-  color: rgb(70, 70, 89);
+  font-family: 'Roboto Mono', monospace;
+  color: var(--text-color2);
   font-size: 18px;
   line-height: 1.5;
   padding: 0;
   margin: 0;
+  background-color: var(--body-style);
   
 }
 .main-header {
@@ -13,8 +33,8 @@ body {
   align-items: center;
   padding: 0 2rem;
   margin: 0;
-  background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+  background-color: var(--fundo);
+  box-shadow: var(--shadow);
   z-index: 2;
 }
 
@@ -25,18 +45,18 @@ body {
     
 }
 #logo {
-  color: rgb(70, 70, 89);
+  color: var(--text);
   font-size: 18px;
     font-weight: 700;
     padding: 0;
 }
 
 #logo:hover {
-  color: #baafe6;
+  color: var(--fundo);
 }
 
 strong {
-  color: #baafe6;
+  color: var(--hover);
 }
 a {
   text-decoration: none;
@@ -50,18 +70,18 @@ nav {
 }
 
 .navButtons {
-  color: rgb(83, 70, 89);
+  color: var(--text);
   font-weight: 500;
 }
 
 .navButtons:hover {
-  color: #d840f3;
+  color: var(--hover);
 }
 
 .buttonProjeto {
-  background: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+  background: var(--gradient);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--text-color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,8 +91,41 @@ nav {
   padding: 8px;
 }
 .buttonProjeto:hover {
-  box-shadow: rgba(40, 1, 47, 0.4) 0px 2px 4px,
-  rgba(39, 0, 46, 0.3)  0px 7px 13px -3px, rgba(38, 0, 46, 0.1)  0px -3px 0px inset;
+  box-shadow: var(--shadowint);
+}
+
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: #8f75ff;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: rgb(172, 25, 221);
+}
+
+body.dark-theme{
+  /* HSL color mode */
+  --fundo: #d4c4da;
+  --text-color:#ffff;
+  --text-color2:#464659;
+  --fundo2: #ffffff61;
+  --shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+  --shadowint: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3)  0px 7px 13px -3px, rgba(0, 0, 0, 0.1)  0px -3px 0px inset;
+  --text: rgb(255, 255, 255);
+  --hover: #baafe6;
+  --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+  --title: #8f75ff;
+  --body-style: #d4c4da;
+  --h3: #3c0450;
+  
 }
 
 .perfil {
@@ -80,7 +133,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(243, 232, 253, 0.482);
+  background-color: var(--fundo2);
 }
 .perfil h2 {
   max-width: 500px;
@@ -90,14 +143,14 @@ nav {
   width: 300px;
   margin: 1rem;
   border-radius: 100%;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(45deg, #8f75ff, rgb(172, 25, 221)) border-box;
+  background: var(--gradient);
   border: 5px solid transparent;
 }
 h3 {
-  color: #8f75ff;
+  color: var(--h3);
   font-size: 24px;
   margin-bottom: 0;
+  margin-left: 20px;
 }
 #tecnologias{
   display: flex;
@@ -111,12 +164,19 @@ h3 {
 }
 
 #projetos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10rem;
-  margin-top: 2rem;
+  text-align: center;
+  margin: 30px;
 }
+
+.container-project{
+  display: flex;
+  width: 50px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
 .icones {
   margin-top: 1rem;
 }
@@ -126,7 +186,7 @@ h3 {
 }
 
 #sobre {
-  background-color: rgba(245, 232, 253, 0.482);
+  background-color: var(--fundo2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,8 +197,7 @@ h3 {
 .conteudoSobre {
   display: flex;
   align-items: center;
-  width: 80%
-  margin-rigth: 250px;
+  width: 80%;
 }
 
 .SobreImg {
@@ -160,7 +219,7 @@ h3 {
     margin-right: 20px;
     transition: .3s;
     display: flex;
-    background: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+    background: var(--gradient);
     color: #ffffff;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -168,8 +227,7 @@ h3 {
 }
 
 .button-icon:hover {
-  box-shadow: rgba(40, 1, 47, 0.4) 0px 2px 4px,
-  rgba(39, 0, 46, 0.3)  0px 7px 13px -3px, rgba(38, 0, 46, 0.1)  0px -3px 0px inset;
+  box-shadow: var(--shadowint);
 }
 
 .button_icon {
@@ -180,27 +238,24 @@ h3 {
 
 .portfolio-img{
     display: flex;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    margin: 10px;
+    box-shadow: var(--shadow);
+    margin-left: 30px;
 }
 
 .telas {
-    width: 500px;
-    margin: 1rem;
+    width: 370px;
+    height: 240px;
+    padding: 0;
+    align-items: center;
 }
 
-hr {
-  width: 100%;
-  height: 5px;
-  background-color: #8f75ff;
-  border: none;
-  margin: 1rem 0;
-}
 #contatos {
+  margin-top: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(245, 232, 253, 0.482)
+  background-color: var(--fundo2);
 }
 
 #contatos p {
@@ -214,9 +269,9 @@ hr {
   justify-content: space-between;
 }
 .buttonContato {
-  background-image: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
+  background-image: var(--gradient);
   border-radius: 10px;
-  color: white;
+  color: var(--text-color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -227,8 +282,7 @@ hr {
   margin: 1rem;
 }
 .buttonContato:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: var(--shadowint);
 }
 
 .buttonContato img {
@@ -240,7 +294,8 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -280,8 +335,9 @@ footer {
   #projetos {
     margin: 1rem;
   }
+
   #sobre {
-    margin: 0;
+    margin: 1rem;
     flex-direction: column;
     align-items: center;
   }
@@ -292,7 +348,6 @@ footer {
 
   .conteudoSobre{
     flex-direction: column;
-    margin: 0;
   }
 
   .text{
