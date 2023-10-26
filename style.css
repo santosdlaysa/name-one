@@ -334,6 +334,7 @@ footer {
   }
   #projetos {
     margin: 2rem;
+    align-items: center;
   }
 
   .container-project{
