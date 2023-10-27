@@ -185,18 +185,17 @@ h3 {
 }
 
 #sobre {
-  background-color: var(--fundo2);
+  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  margin: auto;
-  padding: 2rem;
+  background-color: var(--fundo2);
 }
 
 .conteudoSobre {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .SobreImg {
@@ -415,9 +414,6 @@ footer {
     align-items: center;
   }
 
-  .SobreImg{
-    
-  }
   .container-project{
     width: auto;
   }
@@ -432,4 +428,19 @@ footer {
     margin-top: 30rem;
   }
   
+}
+
+@media screen and (max-width: 2000px) {
+
+  #sobre {
+    
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container-project{
+    margin-left: 47%;
+    justify-content: center;
+  }
+
 }
