@@ -202,7 +202,12 @@ h3 {
 .SobreImg {
   width: 300px;
   height: 300px;
-  margin-right: 2rem;
+  margin: 1rem;
+  margin-right: 6rem;
+  margin-left: -60px;
+  border-radius: 100%;
+  background: var(--gradient);
+  border: 5px solid transparent;
 }
 
 #sobre p {
@@ -298,7 +303,7 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 16px;
     margin: 0;
@@ -399,202 +404,32 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    font-size: 16px;
+@media screen and (max-width: 1200px) {
+  .body {
     margin: 0;
-  }
-  .main-header {
-    flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
-  }
-  nav {
-    margin-top: 0.5rem;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .logo-nav {
-    margin-right: 0;
-  }
-  .perfil {
-    flex-direction: column;
-    align-items: center;
-  }
-  #fotoperfil {
-    width: 200px;
-    margin: 1rem;
-  }
-  #tecnologias {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-
-  }
-  #projetos {
-    margin: 2rem;
-    align-items: center;
-  }
-
-  .container-project{
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
   }
 
   #sobre {
-    margin: 1rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  .SobreImg {
-    flex-direction: column;
-    margin: 1rem;
-  }
-
-  .conteudoSobre{
-    flex-direction: column;
-  }
-
-  .text{
-    align-items: center;
-    margin: 0.5rem;
-  }
-
-  p {
-    text-align: justify;
-  }
-  .text-p{
-    margin: -15px;
-  }
-  .container-text{
     flex-direction: column;
     align-items: center;
   }
 
-  .telas{
-    width: 300px;
-    margin: 1rem;
+  .SobreImg{
+    
   }
-  
-  .portfolio-img{
-    flex-direction: column;
-  }
-
-  #contatos{
-    flex-direction: column;
-    text-align: center;
-    margin-top: 85rem;
-
-  }
-  .WrapperButtonsContato {
-    flex-direction: column;
-  }
-  .buttonContato {
-    margin: 1rem 0;
-  }
-  footer {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and(max-width: 1200px) {
-  body {
-    font-size: 16px;
-    margin: 0;
-  }
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav {
-    margin-top: 0.5rem;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .logo-nav {
-    margin-right: 0;
-  }
-  .perfil {
-    flex-direction: column;
-    align-items: center;
-  }
-  #fotoperfil {
-    width: 200px;
-    margin: 1rem;
-  }
-  #tecnologias {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-
-  }
-  #projetos {
-    margin: 2rem;
-  }
-
   .container-project{
-    flex-direction: column;
+    width: auto;
+  }
+
+  .telas {
+    width: auto;
+    margin-left: -20px;
     align-items: center;
-    margin: auto;
-  }
 
-  #sobre {
-    margin: 1rem;
-    flex-direction: column;
-    align-items: center;
   }
-  .SobreImg {
-    flex-direction: column;
-    margin: 1rem;
-  }
-
-  .conteudoSobre{
-    flex-direction: column;
-  }
-
-  .text{
-    align-items: center;
-    margin: 0.5rem;
-  }
-
-  p {
-    text-align: justify;
-  }
-  .text-p{
-    margin: -15px;
-  }
-  .container-text{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .telas{
-    width: 300px;
-    margin: 1rem;
+  #contatos {
+    margin-top: 30rem;
   }
   
-  .portfolio-img{
-    flex-direction: column;
-  }
-
-  #contatos{
-    flex-direction: column;
-    text-align: center;
-    margin-top: 85rem;
-
-  }
-  .WrapperButtonsContato {
-    flex-direction: column;
-  }
-  .buttonContato {
-    margin: 1rem 0;
-  }
-  footer {
-    margin-top: 1rem;
-  }
 }
