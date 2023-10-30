@@ -63,9 +63,13 @@ a {
 }
 nav {
   display: flex;
-  flex-direction: row;
+}
+
+.menu-top{
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 20x 10px 20px;
   width: 600px;
 }
 
@@ -98,12 +102,15 @@ nav {
   display: flex;
   align-items: center;
 }
+.menu-suspenso{
+  display: none;
+}
 
 .change-theme{
   font-size: 1.25rem;
   color: #8f75ff;
-  margin-right: 1rem;
   cursor: pointer;
+  margin-left: -90px;
 }
 
 .change-theme:hover{
@@ -123,7 +130,7 @@ body.dark-theme{
     --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
     --title: #8f75ff;
     --body-style: #211627e0;
-    --h3: #805caa;
+    --h3: #d0aef7;
   
 }
 
@@ -254,7 +261,7 @@ h3 {
     align-items: center;
 }
 
-#contatos {
+.contatos {
   margin-top: 25rem;
   display: flex;
   flex-direction: column;
@@ -262,7 +269,7 @@ h3 {
   background-color: var(--fundo2);
 }
 
-#contatos p {
+.contatos p {
   display: flex;
   align-items: center;
 }
@@ -309,17 +316,24 @@ footer {
     margin: 0;
   }
   .main-header {
-    flex-direction: column;
     align-items: center;
     padding: 0 1rem;
   }
   nav {
-    margin-top: 0.5rem;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
   }
+  .menu-top{
+    display: none;
+  }
+
+  .menu-suspenso{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo-nav {
     margin-right: 0;
   }
@@ -369,6 +383,7 @@ footer {
 
   p {
     text-align: justify;
+    margin: 30px;
   }
   .text-p{
     margin: -15px;
@@ -379,19 +394,22 @@ footer {
   }
 
   .telas{
-    width: 300px;
-    margin: 1rem;
+    width: 350px;
+
   }
   
   .portfolio-img{
     flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 220px;
   }
 
-  #contatos{
+  .contatos{
     flex-direction: column;
     text-align: center;
-    margin-top: 85rem;
-
+    padding: 0;
+    margin-top: auto;
   }
   .WrapperButtonsContato {
     flex-direction: column;
@@ -416,7 +434,7 @@ footer {
   }
 
   .SobreImg{
-    
+    margin: auto;
   }
   .container-project{
     width: auto;
@@ -428,8 +446,8 @@ footer {
     align-items: center;
 
   }
-  #contatos {
-    margin-top: 30rem;
+  .contatos {
+    margin-top: 65rem;
   }
   
 }
