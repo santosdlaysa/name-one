@@ -63,13 +63,9 @@ a {
 }
 nav {
   display: flex;
-}
-
-.menu-top{
-  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 20x 10px 20px;
   width: 600px;
 }
 
@@ -102,15 +98,12 @@ nav {
   display: flex;
   align-items: center;
 }
-.menu-suspenso{
-  display: none;
-}
 
 .change-theme{
   font-size: 1.25rem;
   color: #8f75ff;
+  margin-right: 1rem;
   cursor: pointer;
-  margin-left: -90px;
 }
 
 .change-theme:hover{
@@ -130,7 +123,7 @@ body.dark-theme{
     --gradient: linear-gradient(45deg, #8f75ff, rgb(197, 143, 215));
     --title: #8f75ff;
     --body-style: #211627e0;
-    --h3: #d0aef7;
+    --h3: #805caa;
   
 }
 
@@ -169,9 +162,11 @@ h3 {
   text-align: center;
 }
 
-#projetos {
+.projetos {
   text-align: center;
-  margin: 30px;
+  margin: 50px;
+  align-items: center;
+  
 }
 
 .container-project{
@@ -258,17 +253,23 @@ h3 {
     height: 240px;
     padding: 0;
     align-items: center;
+    margin: 10px;
 }
 
-.contatos {
-  margin-top: 25rem;
+.section-container-1 {
+  align-items: center;
+  margin-left: 120px;
+
+}
+#contatos {
+  margin-top: 28rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--fundo2);
 }
 
-.contatos p {
+#contatos p {
   display: flex;
   align-items: center;
 }
@@ -313,26 +314,23 @@ footer {
   body {
     font-size: 16px;
     margin: 0;
+
   }
+ .main-header header {
+  display: flex;
+ }
   .main-header {
+    flex-direction: column;
     align-items: center;
     padding: 0 1rem;
   }
   nav {
-    padding: 1.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .menu-top{
-    display: none;
-  }
-
-  .menu-suspenso{
-    display: block;
-    flex-direction: column;
+    margin-top: 0.5rem;
+    flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
-
   .logo-nav {
     margin-right: 0;
   }
@@ -358,9 +356,14 @@ footer {
   .container-project{
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin-left: 10px;
+    display: flex;
   }
 
+  .portfolio-img {
+    width: 250px;
+    height: 150px;
+  }
   #sobre {
     margin: 1rem;
     flex-direction: column;
@@ -382,7 +385,6 @@ footer {
 
   p {
     text-align: justify;
-    margin: 30px;
   }
   .text-p{
     margin: -15px;
@@ -393,22 +395,19 @@ footer {
   }
 
   .telas{
-    width: 350px;
-
+    width: 300px;
+    margin: 1rem;
   }
   
   .portfolio-img{
     flex-direction: column;
-    margin: auto;
-    width: 350px;
-    height: 220px;
   }
 
-  .contatos{
+  #contatos{
     flex-direction: column;
     text-align: center;
-    padding: 0;
-    margin-top: auto;
+    margin-top: 85rem;
+
   }
   .WrapperButtonsContato {
     flex-direction: column;
@@ -432,9 +431,6 @@ footer {
     align-items: center;
   }
 
-  .SobreImg{
-    
-  }
   .container-project{
     width: auto;
   }
@@ -445,30 +441,9 @@ footer {
     align-items: center;
 
   }
-  .contatos {
-    margin-top: 65rem;
+  #contatos {
+    margin-top: 75rem;
   }
   
 }
 
-@media screen and (max-width: 2000px) {
-
-  .logo-nav{
-    margin-left: 9vw;
-  }
-
-  nav {
-    margin-left: 10vw;
-  }
-  #sobre {
-    
-    justify-content: center;
-    text-align: center;
-  }
-
-  .container-project{
-    margin-left: 48%;
-    justify-content: center;
-  }
-
-}
